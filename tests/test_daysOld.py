@@ -1,4 +1,4 @@
-from scripts.daysOld import isLeapYear
+from scripts.daysOld import isLeapYear, daysBetweenDates
 
 
 def test_isLeapYear_returns_366_if_year_divisible_by_4():
@@ -15,3 +15,7 @@ def test_isLeapYear_returns_365_if_year_divisible_by4_by100():
 
 def test_isLeapYear_returns_366_if_year_divisible_by4_by100_and400():
     assert isLeapYear(2000) == 366
+
+
+def test_daysBetweenDates_returns_1_for_1_day_old():
+    assert daysBetweenDates(1, 1, 2021, 2, 1, 2021) == 1
