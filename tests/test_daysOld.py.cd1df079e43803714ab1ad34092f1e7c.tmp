@@ -19,3 +19,7 @@ def test_isLeapYear_returns_366_if_year_divisible_by4_by100_and400():
 
 def test_daysBetweenDates_returns_1_for_1_day_old():
     assert daysBetweenDates(2021, 1, 1, 2021, 1, 2) == 1
+
+
+def test_daysBetweenDates_returns_523():
+    assert daysBetweenDates(2001, 3, 3, 2002, 8, 8) == 523
