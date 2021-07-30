@@ -23,3 +23,7 @@ def test_daysBetweenDates_returns_1_for_1_day_old():
 
 def test_daysBetweenDates_returns_523():
     assert daysBetweenDates(2001, 3, 3, 2002, 8, 8) == 523
+
+
+def test_daysBetweenDates_returns_948():
+    assert daysBetweenDates(2000, 1, 3, 2001, 8, 8) == 583
