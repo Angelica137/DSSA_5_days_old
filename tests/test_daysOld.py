@@ -10,4 +10,4 @@ def test_isLeapYear_returns_364_if_year_not_divisible_by_4():
 
 
 def test_isLeapYear_returns_365_if_year_divisible_by4_by100():
-    assert isLeapYear(2000) == 365
+    assert isLeapYear(1900) == 365
