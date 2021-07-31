@@ -20,7 +20,6 @@ def daysBetweenDates(y1, m1, d1, y2, m2, d2):
 
     else:
         years = list(range(y1 + 1, y2))
-        print(years)
         days_in_year = []
         for year in years:
             if isLeapYear(year) == 366:
@@ -51,7 +50,3 @@ def daysBetweenDates(y1, m1, d1, y2, m2, d2):
             days += 1
 
     return days
-
-
-print(daysBetweenDates(2001, 3, 3, 2002, 8, 8))
-print(daysBetweenDates(1997, 3, 1, 2021, 7, 31))
