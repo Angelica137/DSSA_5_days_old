@@ -18,28 +18,6 @@ def daysBetweenDates(y1, m1, d1, y2, m2, d2):
         if m1 == m2:
             days = d2 - d1
 
-    elif(y2 - y1 == 1):
-        i = 11
-        y1_days = 0
-        y2_days = 0
-        while i > m1 - 1:
-            y1_days += daysOfMonths[i]
-            i -= 1
-        j = 0
-        while m2 > 1:
-            y2_days += daysOfMonths[j]
-            j += 1
-            m2 -= 1
-
-        days_month1 = daysOfMonths[m1 - 1] - d1
-
-        days = y1_days + y2_days + days_month1 + d2
-
-        if isLeapYear(y1) == 366 and m1 < 3:
-            days += 1
-        if isLeapYear(y2) == 366 and m2 > 1:
-            days += 1
-
     else:
         years = list(range(y1 + 1, y2))
         print(years)
