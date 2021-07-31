@@ -27,3 +27,7 @@ def test_daysBetweenDates_returns_523():
 
 def test_daysBetweenDates_returns_948():
     assert daysBetweenDates(2000, 1, 3, 2001, 8, 8) == 583
+
+
+def test_daysBetweenDates_returns_948():
+    assert daysBetweenDates(1997, 3, 1, 2021, 7, 31) == 8918
